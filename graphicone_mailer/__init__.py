@@ -11,7 +11,7 @@ s_email = os.environ['EMAIL']
 s_pass = os.environ['EMAIL_PASS']
 
 s_server = os.environ['SMTP_SERVER']
-s_port = os.environ['SMTP_PORT']
+s_port = int(os.environ['SMTP_PORT'])
 
 
 def send_email_for_reload_password(receiver_email, temp_password, sender_email=s_email, password=s_pass,
